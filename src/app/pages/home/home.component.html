@@ -1,0 +1,31 @@
+<div class="container text-center">
+    <br><br>
+    <h1>Sleep App</h1>
+    <img src="../../../assets/Sleep analysis-amico.png" class="w-75">
+    <br>
+</div>
+<div class="container">
+    <label class="negrita">Iniciar Sesion</label>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <input [(ngModel)]="usuario" type="email" class="form-control" placeholder="Correo" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+
+    <label class="negrita">Contraseña</label>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-lock"></i></span>
+        </div>
+        <input [(ngModel)]="pass" type="password" placeholder="Contraseña" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+
+    </div>
+    <button (click)="ingresar()" type="button" class="btn btn-primary btn-block boton btn-lg">Ingresar</button>
+    <br><br>
+    <a href="#">¿Olvidaste la contraseña?</a>
+    <br><br>
+    <div class="row justify-content-end">
+        <p style="color: red;margin: 1rem; font-size: 1.2rem;">Registrarse</p>
+    </div>
+</div>

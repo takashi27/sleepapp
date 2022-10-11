@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: blueviolet !important;">
+    <a class="navbar-brand" href="#"><i class="fa fa-bed" aria-hidden="true"></i> Sleep App</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="[ '/Graficas']" routerLinkActive="active">Resumen <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="[ '/Alarmas']" routerLinkActive="active">Mis alarmas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="[ '/Videos']" routerLinkActive="active">Videos para mejorar el sueño</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="[ '/Sonidos']" routerLinkActive="active">Sonidos para mejorar el sueño</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reportes</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" [routerLink]="[ '/Semana']" routerLinkActive="active">Resumen Semanal</a>
+                    <a class="dropdown-item" [routerLink]="[ '/Mes']" routerLinkActive="active">Resumen Mensual</a>
+                    <a class="dropdown-item" [routerLink]="[ '/Anio']" routerLinkActive="active">Resumen Anual</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

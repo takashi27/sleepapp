@@ -1,0 +1,29 @@
+<br>
+<div class="container">
+    <div class="text-center">
+        <img src="../../../assets/user.jpg" class="rounded rounded-circle w-25" alt="">
+    </div>
+    <h2 class="text-center color">Buenas noches Uniminuto</h2>
+    <hr>
+    <div class="dropdown">
+        <button class="btn btn-primary boton btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+          Seleccionar Mes
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Enero</a>
+            <a class="dropdown-item" href="#">Febrero</a>
+            <a class="dropdown-item" href="#">Marzo</a>
+            <a class="dropdown-item" href="#">Abril</a>
+            <a class="dropdown-item" href="#">Mayo</a>
+        </div>
+    </div>
+    <br>
+    <h3>Este Mes (Mayo 2022):</h3>
+    <h4>Desempeño: Alto <i class="fa fa-heart" aria-hidden="true"></i></h4>
+    <p>¡Sigue así!</p>
+    <canvas baseChart [data]="barChartData" [options]="barChartOptions" [type]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    <hr>
+    <button type="button" [routerLink]="[ '/Alarmas']" class="btn btn-primary btn-lg btn-block boton">Activar Alarmas</button>
+    <button type="button" [routerLink]="[ '/Mes']" class="btn btn-primary btn-lg btn-block boton">Reporte Mensual</button>
+</div>

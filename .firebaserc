@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sleepapp-b82fc": {
+      "hosting": {
+        "sleepapp": [
+          "sleepapp-b82fc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sleepapp-b82fc"
+  }
+}

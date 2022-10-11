@@ -1,0 +1,34 @@
+<br>
+<div class="container">
+    <div class="text-center">
+        <img src="../../../assets/user.jpg" class="rounded rounded-circle w-25" alt="">
+    </div>
+    <h3 class="color text-center">Buenas Noches Uniminuto</h3>
+    <hr>
+    <h4>Hemos escogido estos sonidos para que te relajes y puedas dormir más rápidamente:</h4>
+    <br>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <iframe class="w-100" height="300" src="https://www.youtube.com/embed/1b5AmaQcZTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe class="w-100" height="300" src="https://www.youtube.com/embed/kag0aJqQsGo&ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe class="w-100" height="300" src="https://www.youtube.com/embed/acQS2Fef8tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <hr>
+    <button type="button" [routerLink]="[ '/Alarmas']" class="btn btn-primary btn-lg btn-block boton">Activar Alarmas</button>
+    <button type="button" [routerLink]="[ '/Mes']" class="btn btn-primary btn-lg btn-block boton">Reporte Mensual</button>
+</div>

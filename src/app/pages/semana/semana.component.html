@@ -1,0 +1,16 @@
+<br>
+<div class="container">
+    <div class="text-center">
+        <img src="../../../assets/user.jpg" class="rounded rounded-circle w-25" alt="">
+    </div>
+    <h2 class="text-center color">Buenas noches Uniminuto</h2>
+    <hr>
+    <h3>Esta Semana:</h3>
+    <h4>Desempeño: Alto <i class="fa fa-heart" aria-hidden="true"></i></h4>
+    <p>¡Sigue así!</p>
+    <canvas baseChart [data]="barChartData" [options]="barChartOptions" [type]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    <hr>
+    <button type="button" [routerLink]="[ '/Alarmas']" class="btn btn-primary btn-lg btn-block boton">Activar Alarmas</button>
+    <button type="button" [routerLink]="[ '/Mes']" class="btn btn-primary btn-lg btn-block boton">Reporte Mensual</button>
+</div>

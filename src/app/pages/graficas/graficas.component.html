@@ -1,0 +1,15 @@
+<br>
+<div class="container">
+    <div class="text-center">
+        <img src="../../../assets/user.jpg" class="rounded rounded-circle w-25" alt="">
+    </div>
+    <h2 class="text-center color">Buenas noches {{nombre}}</h2>
+    <hr>
+    <h3>Tus últimas 3 semanas:</h3>
+    <h4>Desempeño: Bajo <i class="fas fa-sad-cry"></i></h4>
+    <p>Te recomendamos activar alarmas de sueño y utilizar los videos y sonidos para mejorar tu calidad de sueño</p>
+    <canvas baseChart width="400" height="400" [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+    <hr>
+    <button type="button" [routerLink]="[ '/Alarmas']" class="btn btn-primary btn-lg btn-block boton">Activar Alarmas</button>
+    <button type="button" [routerLink]="[ '/Mes']" class="btn btn-primary btn-lg btn-block boton">Reporte Mensual</button>
+</div>
